@@ -1,0 +1,67 @@
+/* Reset & Body */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #2b2b76;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* Grid Container */
+.palettes-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    max-width: 1000px;
+}
+
+/* Card */
+.palette-card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Color Grid */
+.color-grid {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(2, 50px);
+}
+
+.color-grid div:nth-child(-n+6) {
+    background: #ff9933;
+}
+
+.color-grid div:nth-child(n+7) {
+    background-image: url(./assit/smit-2.PNG);
+    /* background: #5555aa; */
+}
+
+/* Palette Info */
+.palette-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+    font-weight: bold;
+    color: #444;
+}
+
+/* Responsive */
+@media(max-width: 1050px) {
+    .palettes-container { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media(max-width: 700px) {
+    .palettes-container { grid-template-columns: 1fr; }
+    .color-grid { grid-template-rows: repeat(2, 40px); }
+}

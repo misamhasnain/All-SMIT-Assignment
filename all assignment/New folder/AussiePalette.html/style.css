@@ -1,0 +1,76 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #0037ff;
+}
+button{
+  
+    color: #000000; 
+    position: fixed; /* so it stays at top left even when scrolling */
+    top: 20px;
+    left: 20px; /* positions it on the left */
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+
+/* Palette Grid */
+.palette-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 5px; /* space between swatches */
+    width: 900px;
+}
+
+/* Color Swatches */
+.swatch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    color: white;
+    font-weight: bold;
+    text-align: end;
+}
+
+/* Light text for dark colors, dark text for light colors */
+.beekeeper, .spiced-nectarine, .june-bud, .coastal-breeze, .hint-of-ice-pack {
+    color: black;
+}
+
+/* Colors */
+.beekeeper { background: #F8E794; }
+.spiced-nectarine { background: #FFB37C; }
+.pink-glamour { background: #F87D83; }
+.june-bud { background: #B5E558; }
+.coastal-breeze { background: #E0F7F9; }
+
+.turbo { background: #FFC93C; }
+.quince-jelly { background: #F38C4D; }
+.carmine-pink { background: #E24F4F; }
+.pure-apple { background: #72B734; }
+.hint-of-ice-pack { background: #A6DCE0; }
+
+.middle-blue { background: #6DC2D8; }
+.heliotrope { background: #D36CFF; }
+.exodus-fruit { background: #736EAE; }
+.deep-koamaru { background: #2F3C64; }
+.soaring-eagle { background: #A0A5AD; }
+
+.greenland-green { background: #00A99D; }
+.steel-pink { background: #9B3E9D; }
+.blurple { background: #4C3C9D; }
+.deep-cove { background: #1A1A3C; }
+.wizard-grey { background: #595959; }

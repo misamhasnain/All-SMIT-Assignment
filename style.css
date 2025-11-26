@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', Arial, sans-serif;
+  background: linear-gradient(135deg, #e0f7fa, #e1bee7);
+  color: #333;
+  overflow-x: hidden;
+  transition: background 1s ease;
+}
+
+.main-heading {
+  text-align: center;
+  font-size: 40px;
+  margin: 30px 0;
+  font-weight: 700;
+  color: #1a237e;
+  text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Portal container */
+.portal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px; /* GAP BETWEEN SECTIONS */
+  padding-bottom: 50px;
+}
+
+/* Each portion section */
+.portion {
+  width: 95%;
+  max-width: 700px;
+  background: linear-gradient(145deg, #ffffff, #f0f0f0);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  transition: all 0.5s ease;
+  opacity: 0;
+  transform: translateY(50px);
+}
+
+.portion:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+}
+
+/* Fade-in effect */
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Logos */
+.logo {
+  width: 35px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/* Portion Title */
+.portion-title {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #424242;
+}
+
+/* Assignment Card */
+.assignment-card {
+  background: rgba(255,255,255,0.95);
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 15px;
+  border-left: 6px solid #1d72ff;
+  transition: all 0.3s ease;
+}
+
+.assignment-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+  border-left-color: #ff4081;
+}
+
+/* Assignment Image */
+.assignment-img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  transition: transform 0.4s ease;
+}
+
+.assignment-img:hover {
+  transform: scale(1.05);
+}
+
+/* Horizontal Buttons */
+.btn-box {
+  display: flex;
+  gap: 15px;
+  margin-top: 12px;
+}
+
+.view-btn, .code-btn {
+  flex: 1;
+  text-align: center;
+  text-decoration: none;
+  padding: 12px 0;
+  border-radius: 10px;
+  font-weight: 600;
+  color: white;
+  transition: all 0.4s ease;
+}
+
+.view-btn { background: #1d72ff; }
+.code-btn { background: #ff4081; }
+
+.view-btn:hover, .code-btn:hover {
+  transform: scale(1.08);
+  opacity: 0.9;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .portion {
+    width: 90%;
+  }
+  .btn-box {
+    flex-direction: column;
+  }
+  .view-btn, .code-btn {
+    width: 100%;
+  }
+}

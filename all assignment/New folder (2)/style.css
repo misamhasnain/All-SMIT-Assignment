@@ -1,0 +1,386 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  background: #ffffffc9;
+  padding: 10px 0;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  
+
+  /* padding: 2px 0; */
+
+}
+
+nav ul {
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  gap: 30px;
+  list-style: none;
+}
+
+nav ul li {
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+nav ul li:hover {
+  color: #2997ff;
+}
+
+nav ul li img {
+  height: 25px;
+  width: 25px;
+}
+
+
+.firstBox,
+.secondBox,
+.thirdBox,
+.sameOneOne,
+.sameOneTwo,
+.sameSecondOne,
+.sameSecondTwo {
+  height: 80vh;
+    width: 100%;
+  background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+    .firstBox {
+  height: 80vh;         
+  width: 100%;
+  background: url("./assit/hero_ase25_startframe__cgkiuyndpjxy_medium.jpg")
+    center/cover no-repeat;
+  background-attachment: fixed;   
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+
+.firstBox h1,
+.firstBox h3 {
+  color: #fff;
+}
+.firstBox .buttons {
+  display: flex;
+  gap: 10px;
+   
+}
+.learnBtn {
+  background: #0071e3;
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.learnBtn:hover {
+  background: #005bb5;
+}
+.buyBtn {
+  background: #000;
+  color: #fff;
+  border: 2px solid #0071e3;
+}
+.buyBtn:hover {
+  background: #333;
+}
+
+.secondBox,
+.thirdBox {
+  height: 80vh;
+  width: 100%;
+  color: #fff;
+  justify-content: flex-start;
+  padding-top: 50px;
+  background-size: cover;
+  background-position: center;
+}
+.secondBox {
+  background: url("./assit/hero_iphone_17_pro__bknyzxfk2agi_large.jpg")
+    center/cover no-repeat;
+}
+.thirdBox {
+  background: url("./assit/hero_iphone_air__0gxyavihpiqu_large.jpg")
+    center/cover no-repeat;
+}
+
+.sameBox {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+.sameBox > div {
+  width: 47%;
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+  gap: 15px;
+  padding-top: 50px;
+  background-size: cover;
+  background-position: center;
+}
+
+.extea {
+  height: 2vh;
+}
+
+.pic {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* Common button styles */
+button {
+  border-radius: 30px;
+  padding: 10px 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Learn more button - blue */
+.learnBtn {
+  background-color: #0071e3;
+  color: white;
+  border: none;
+}
+.learnBtn:hover {
+  background-color: #005bb5;
+}
+
+/* Buy button - black */
+.buyBtn {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border: 1px solid #333; /* subtle border */
+}
+.buyBtn:hover {
+  background-color: #222; /* darken slightly on hover */
+}
+/* Footer Container */
+footer {
+    background-color: #f5f5f7;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    color: #515154;
+}
+
+/* Legal / Disclaimer text */
+.legal-text-section {
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 20px;
+    font-size: 12px;
+    line-height: 1.6;
+}
+
+.legal-text-section .footnote {
+    margin-bottom: 12px;
+}
+
+.legal-text-section a {
+    color: #0070c9;
+    text-decoration: none;
+}
+.legal-text-section a:hover {
+    text-decoration: underline;
+}
+
+/* Footer columns layout */
+.footer-columns {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    gap: 20px;
+}
+
+.footer-column {
+    flex: 1 1 200px;
+}
+
+.footer-column h3 {
+    font-size: 12px;
+    font-weight: 600;
+    color: #424245;
+    margin-bottom: 8px;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-column li {
+    margin-bottom: 6px;
+}
+
+.footer-column a {
+    font-size: 12px;
+    font-weight: 400;
+    color: #515154;
+    text-decoration: none;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Footer */
+@media (max-width: 768px) {
+    .footer-columns {
+        flex-direction: column;
+        gap: 30px;
+    }
+}
+.sameOneOne{
+    background-image: url(./assit/promo_airpodspro_3__f6xmza7bglei_large.jpg);
+}
+
+.sameOneTwo{
+
+}
+
+.sameSecondOne{
+
+}
+
+.sameSecondTwo{
+    
+}
+
+
+
+
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1000px; /* Adjust based on desired width */
+    margin: 0 auto;
+    padding: 40px 20px;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f5f5f7; /* Light background color similar to Apple's footer */
+}
+
+.footer-column {
+    flex: 1; /* Distribute space evenly among columns */
+    padding-right: 20px;
+    min-width: 150px; /* Ensure columns don't get too narrow */
+}
+
+.footer-column h3 {
+    font-size: 12px;
+    font-weight: 600;
+    color: #424245; /* Darker text for the headings */
+    margin-top: 0;
+    margin-bottom: 8px;
+    line-height: 1.33337;
+}
+
+.footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 20px; /* Space between sections within a column */
+}
+
+.footer-column li {
+    margin-bottom: 6px;
+}
+
+.footer-column a {
+    font-size: 12px;
+    font-weight: 400;
+    color: #515154; /* Lighter text for the links */
+    text-decoration: none;
+    line-height: 1.33337;
+}
+
+.footer-column a:hover {
+    text-decoration: underline;
+}
+
+/* Media query for smaller screens: stack columns vertically */
+@media (max-width: 768px) {
+    .footer-columns {
+        flex-direction: column;
+    }
+
+    .footer-column {
+        padding-right: 0;
+        border-bottom: 1px solid #d2d2d7; /* Separator for stacked columns */
+        padding-bottom: 15px;
+        padding-top: 15px;
+    }
+    
+    .footer-column:last-child {
+        border-bottom: none;
+    }
+
+    .footer-column ul {
+        margin-bottom: 0;
+    }
+}
+
+.legal-text-section {
+    /* Set max width to match the content in the original image */
+    max-width: 980px;
+    margin: 0 auto;
+    padding: 20px 20px 40px 20px;
+    background-color: #f5f5f7; /* Light background color used by Apple footer/disclaimers */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
+.footnote {
+    /* Apple's standard small text for legal disclaimers */
+    font-size: 12px;
+    line-height: 1.66667; /* Generous line height for readability */
+    color: #515154; /* Medium-dark gray text color */
+    margin: 0; /* Remove default paragraph margins */
+    padding-bottom: 0.8em; /* Add vertical space between paragraphs */
+}
+
+.footnote:first-child {
+    padding-top: 0.8em; /* Add space above the first paragraph */
+    /* The first paragraph is slightly indented in the original image due to the "1." */
+    text-indent: -1.2em;
+    padding-left: 1.2em;
+}
+
+.footnote a {
+    color: #0070c9; /* Standard Apple blue for links */
+    text-decoration: none; /* Links are usually not underlined by default in Apple's style */
+}
+
+.footnote a:hover {
+    text-decoration: underline;
+}
+
+.extea{
+    height: 2vh;
+    width: 100%;
+
+}
