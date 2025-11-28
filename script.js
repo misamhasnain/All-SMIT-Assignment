@@ -12,10 +12,10 @@ const observer = new IntersectionObserver(entries => {
 sections.forEach(section => observer.observe(section));
 
 // Buttons alert
-document.querySelectorAll(".view-btn").forEach(btn => {
-  btn.onclick = () => alert("Opening assignment view...");
-});
+// document.querySelectorAll(".view-btn").forEach(btn => {
+//   btn.onclick = () => alert("Opening assignment view...");
+// });
 
-document.querySelectorAll(".code-btn").forEach(btn => {
-  btn.onclick = () => alert("Opening assignment code...");
-});
+// document.querySelectorAll(".code-btn").forEach(btn => {
+//   btn.onclick = () => alert("Opening assignment code...");
+// });
